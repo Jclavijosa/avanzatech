@@ -39,8 +39,14 @@ Aplicación web interactiva para el análisis y predicción del sector de bebida
 
 ### Prerrequisitos
 
-- Python 3.8 o superior instalado en tu sistema.
-- Git (opcional, para clonar el repositorio).
+- **Python 3.8**
+- **Streamlit**
+- **Prophet**
+- **Scikit-learn**
+- **TensorFlow Keras**
+- **Plotly**
+- **Pandas**
+- **NumPy**
 
 ### Pasos
 
