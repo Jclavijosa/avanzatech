@@ -1,0 +1,14 @@
+# Archivos de Python
+__pycache__/
+*.py[cod]
+
+# Archivos de datos grandes
+*.csv
+
+# Entornos virtuales
+venv/
+env/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
