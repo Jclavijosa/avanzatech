@@ -48,6 +48,6 @@ Aplicación web interactiva para el análisis y predicción del sector de bebida
 
    ```bash
    git clone https://github.com/Jclavijosa/avanzatech.git
-   cd avanzatch
+   cd avanzatech-main
    streamlit run app.py
 
