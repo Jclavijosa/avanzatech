@@ -17,8 +17,8 @@ warnings.filterwarnings('ignore')
 
 # Credenciales de usuarios permitidos
 USER_CREDENTIALS = {
-    'usuario1': 'contraseña1',
-    'usuario2': 'contraseña2'
+    'admin': 'Avanza2024*',
+    'avanza': 'Tech2024*'
 }
 
 def autenticar(usuario, contraseña):
@@ -349,7 +349,8 @@ def run_dashboard(usuario):
     st.sidebar.write(f"Usuario: {usuario}")
     if st.sidebar.button("Cerrar sesión"):
         st.session_state['authenticated'] = False
-        st.experimental_rerun()
+        st.session_state['usuario'] = ''
+        st.rerun()
 
     # Inicio del dashboard
     st.title("🍺 Análisis Avanzado del Sector de Bebidas")
@@ -561,7 +562,7 @@ def main():
                 st.session_state['authenticated'] = True
                 st.session_state['usuario'] = usuario
                 st.success(f"Bienvenido, {usuario}!")
-                st.experimental_rerun()
+                st.rerun()  # Reemplazado por st.rerun()
             else:
                 st.error("Usuario o contraseña incorrectos. Inténtalo de nuevo.")
     else:
